@@ -54,24 +54,17 @@ const products = [
 const Home = () => {
   return (
     <div className="w-full min-h-screen" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      {/* Hero Section */}
-      {/* Hero Section */}
 <section
   id="home"
   className="relative flex items-center justify-center h-screen"
-  style={{
-    backgroundImage: `url(${bg})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
 >
   {/* Green overlay */}
-  <div className="absolute inset-0 bg-green-900 opacity-50"></div>
+  <div className="absolute inset-0"></div>
 
   {/* Content over the background */}
   <div className="relative text-center z-10">
-    <h1 className="text-4xl font-bold text-white">Welcome to AgriMarket</h1>
-    <p className="mt-4 text-gray-200">
+    <h1 className="text-4xl font-bold text-black">Welcome to AgriMarket</h1>
+    <p className="mt-4 text-black-200">
       Personalized solutions for farmers. Discover agricultural tools, seeds, and much more tailored to your land.
     </p>
     <Link to="/products">
