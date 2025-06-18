@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Link, useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
@@ -23,7 +25,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full h-16 flex items-center justify-between px-5" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <nav className="sticky top-0 w-full h-16 flex items-center justify-between px-5 bg-white shadow-md z-50" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       {/* Brand and Logo */}
       <div className="flex items-center">
         <Link to="/">
